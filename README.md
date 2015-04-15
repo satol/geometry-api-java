@@ -23,7 +23,7 @@ The project is also available as a [Maven](http://maven.apache.org/) dependency:
 <dependency>
   <groupId>com.esri.geometry</groupId>
   <artifactId>esri-geometry-api</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
 </dependency>
 ```
 
@@ -53,7 +53,7 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing)
 
 ## Licensing
-Copyright 2013 Esri
+Copyright 2013-2015 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -1,5 +1,5 @@
 /*
- Copyright 1995-2013 Esri
+ Copyright 1995-2015 Esri
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -25,10 +25,14 @@
 
 package com.esri.core.geometry;
 
+import java.io.Serializable;
+
 /**
  * A class that represents axis parallel 3D rectangle.
  */
-public final class Envelope3D {
+public final class Envelope3D implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
 	public double xmin;
 
 	public double ymin;

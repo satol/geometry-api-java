@@ -1,5 +1,5 @@
 /*
- Copyright 1995-2013 Esri
+ Copyright 1995-2015 Esri
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
  email: contracts@esri.com
  */
 package com.esri.core.geometry;
+import java.util.Locale;
 
 class StringUtils {
 
@@ -35,7 +36,7 @@ class StringUtils {
 
         String format = "%." + precision + "g";
 
-        String str_dbl = String.format(format, value);
+        String str_dbl = String.format(Locale.US, format, value);
 
         boolean b_found_dot = false;
         boolean b_found_exponent = false;
@@ -69,7 +70,7 @@ class StringUtils {
 
         String format = "%." + decimals + "f";
 
-        String str_dbl = String.format(format, value);
+        String str_dbl = String.format(Locale.US, format, value);
 
         boolean b_found_dot = false;
 

@@ -1,5 +1,5 @@
 /*
- Copyright 1995-2013 Esri
+ Copyright 1995-2015 Esri
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ import java.io.Serializable;
  */
 public final class Envelope2D implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
 	private final static int XLESSXMIN = 1;
 	// private final int XGREATERXMAX = 2;
 	private final static int YLESSYMIN = 4;
@@ -271,8 +272,11 @@ public final class Envelope2D implements Serializable {
 	}
 
 	/**
-   * Checks if this envelope intersects the other.
-   * @return True if this envelope intersects the other.
+	 * Intersects this envelope with the other and stores result in this
+	 * envelope.
+	 * 
+	 * @return True if this envelope intersects the other, otherwise sets this
+	 *         envelope to empty state and returns False.
 	 */
 	public boolean intersect(Envelope2D other) {
 		if (isEmpty() || other.isEmpty())

@@ -1,5 +1,5 @@
 /*
- Copyright 1995-2013 Esri
+ Copyright 1995-2015 Esri
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 package com.esri.core.geometry;
 
 //This is a stub
-public class OperatorGeodeticDensifyLocal extends
+class OperatorGeodeticDensifyLocal extends
 		OperatorGeodeticDensifyByLength {
 
 	@Override

@@ -1,5 +1,5 @@
 /*
- Copyright 1995-2013 Esri
+ Copyright 1995-2015 Esri
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -25,10 +25,13 @@
 
 package com.esri.core.geometry;
 
+import java.io.Serializable;
+
 /**
  * A 1-dimensional interval.
  */
-public final class Envelope1D {
+public final class Envelope1D implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	public double vmin;
 
